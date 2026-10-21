@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>SoundWave Studio - Guitarra Eléctrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="SoundWave Studio, inicio">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">SoundWave<small>S T U D I O</small></span>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" aria-current="page" href="guitarra.html">Cursos</a></li>
+                    <li><a href="ensayos.html">Ensayos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="detail-layout">
+            <section class="detail-main" aria-labelledby="page-title">
+                <img class="detail-image" src="guitarra.png" alt="Guitarra eléctrica en primer plano">
+                <div class="detail-copy">
+                    <h1 id="page-title">Guitarra Eléctrica</h1>
+                    <p class="subtitle">Técnica, repertorio y vos en el centro.</p>
+                    <p>Desde cero o nivel avanzado, nuestras clases se adaptan a tu ritmo y a tus gustos. Aprendé los acordes, escalas, técnicas y canciones que te gustan, con profesores que te acompañan en todo el proceso.</p>
+                    <ul class="features-list">
+                        <li>Clases personalizadas y grupos reducidos</li>
+                        <li>Repertorio variado: rock, pop, metal y más</li>
+                        <li>Técnica y teoría musical</li>
+                        <li>Grabación de tus progresos, opcional</li>
+                    </ul>
+                    <div class="benefits-grid">
+                        <div><strong>Nivel inicial</strong><span>Acordes, ritmo y primeras canciones.</span></div>
+                        <div><strong>Nivel intermedio</strong><span>Técnicas, escalas y repertorio.</span></div>
+                        <div><strong>Nivel avanzado</strong><span>Improvisación y desarrollo personal.</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="signup-panel">
+                <h2>Solicitá más info...</h2>
+                <p>Dejanos tus datos y te contactamos.</p>
+                <form action="mailto:admin@soundwavestudio.com" method="post" enctype="text/plain">
+                    <label class="visually-hidden" for="guitar-name">Nombre completo</label>
+                    <input id="guitar-name" name="nombre" type="text" placeholder="Nombre completo" autocomplete="name" required>
+                    <label class="visually-hidden" for="guitar-email">Correo electrónico</label>
+                    <input id="guitar-email" name="email" type="email" placeholder="Correo electrónico" autocomplete="email" required>
+                    <label class="visually-hidden" for="guitar-phone">Teléfono (opcional)</label>
+                    <input id="guitar-phone" name="telefono" type="tel" placeholder="Teléfono (opcional)" autocomplete="tel">
+                    <label class="visually-hidden" for="guitar-level">Nivel</label>
+                    <select id="guitar-level" name="nivel" required>
+                        <option value="" disabled selected>Nivel actual</option>
+                        <option>Inicial</option>
+                        <option>Intermedio</option>
+                        <option>Avanzado</option>
+                    </select>
+                    <label class="visually-hidden" for="guitar-message">Mensaje opcional</label>
+                    <textarea id="guitar-message" name="mensaje" placeholder="Mensaje (opcional)" rows="3"></textarea>
+                    <button class="button" type="submit">Enviar suscripción <span aria-hidden="true">→</span></button>
+                </form>
+                <small class="privacy-note"><span aria-hidden="true">🔒</span> Tus datos están seguros.</small>
+            </aside>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 SoundWave Studio · Escuela de Música</p>
+            <a href="mailto:admin@soundwavestudio.com"><span aria-hidden="true">✉</span> admin@soundwavestudio.com</a>
+        </footer>
+    </div>
+</body>
+</html>

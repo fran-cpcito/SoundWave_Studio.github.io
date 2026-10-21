@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>SoundWave Studio - Salas de Ensayo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="SoundWave Studio, inicio">
+                <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="brand-name">SoundWave<small>S T U D I O</small></span>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="produccion.html">Cursos</a></li>
+                    <li><a class="active" aria-current="page" href="ensayos.html">Ensayos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="detail-layout">
+            <section class="detail-main" aria-labelledby="page-title">
+                <img class="detail-image" src="sala%20de%20ensallo.png" alt="Sala de ensayo equipada con batería e instrumentos">
+                <div class="detail-copy">
+                    <h1 id="page-title">Salas de Ensayo</h1>
+                    <p class="subtitle">Tu espacio para crear, tocar y compartir.</p>
+                    <p>Contamos con salas equipadas con batería, amplificadores, micrófonos y todo lo que necesitás para ensayar con tu banda o proyecto. Ambientes cómodos, seguros y con excelente acústica.</p>
+                    <ul class="features-list">
+                        <li>Equipamiento completo: batería, amplis y micrófonos</li>
+                        <li>Reserva por hora o por bloque</li>
+                        <li>Ambiente cómodo, seguro y acústico</li>
+                        <li>Ideal para bandas, solistas y proyectos</li>
+                    </ul>
+                    <div class="benefits-grid">
+                        <div><strong>Equipamiento</strong><span>Todo listo para llegar y tocar.</span></div>
+                        <div><strong>Atención</strong><span>Reservá el horario que te quede mejor.</span></div>
+                        <div><strong>Sonido</strong><span>Salas preparadas para tu banda.</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="signup-panel">
+                <h2>Consultá disponibilidad</h2>
+                <p>Completá tus datos y coordinamos tu ensayo.</p>
+                <form action="mailto:admin@soundwavestudio.com" method="post" enctype="text/plain">
+                    <label class="visually-hidden" for="rehearsal-name">Nombre completo</label>
+                    <input id="rehearsal-name" name="nombre" type="text" placeholder="Nombre completo" autocomplete="name" required>
+                    <label class="visually-hidden" for="rehearsal-email">Correo electrónico</label>
+                    <input id="rehearsal-email" name="email" type="email" placeholder="Correo electrónico" autocomplete="email" required>
+                    <label class="visually-hidden" for="rehearsal-phone">Teléfono</label>
+                    <input id="rehearsal-phone" name="telefono" type="tel" placeholder="Teléfono" autocomplete="tel" required>
+                    <label class="visually-hidden" for="rehearsal-date">Fecha deseada</label>
+                    <input id="rehearsal-date" name="fecha" type="text" placeholder="Fecha deseada" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" required>
+                    <label class="visually-hidden" for="rehearsal-time">Horario aproximado</label>
+                    <select id="rehearsal-time" name="horario" required>
+                        <option value="" disabled selected>Horario aproximado</option>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                    <label class="visually-hidden" for="rehearsal-people">Cantidad de personas</label>
+                    <input id="rehearsal-people" name="personas" type="number" min="1" max="20" placeholder="Cantidad de personas">
+                    <button class="button" type="submit">Enviar consulta <span aria-hidden="true">→</span></button>
+                </form>
+                <small class="privacy-note"><span aria-hidden="true">🔒</span> Tus datos están seguros.</small>
+            </aside>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 SoundWave Studio · Escuela de Música</p>
+            <a href="mailto:admin@soundwavestudio.com"><span aria-hidden="true">✉</span> admin@soundwavestudio.com</a>
+        </footer>
+    </div>
+</body>
+</html>
